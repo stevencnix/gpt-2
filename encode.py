@@ -18,8 +18,8 @@ parser.add_argument('--model_name', metavar='MODEL', type=str, default='1558M', 
 parser.add_argument('--models_dir', metavar='PATH', type=str, default="models", help='Pretrained models dir')
 parser.add_argument('--combine', metavar='CHARS', type=int, default=50000, help='Concatenate files with <|endoftext|> separator into chunks of this minimum size')
 parser.add_argument('--encoding', type=str, default='utf-8', help='Set the encoding for reading and writing files.')
-parser.add_argument('in_text', metavar='PATH', type=str, help='Input file, directory, or glob pattern (utf-8 text).')
-parser.add_argument('out_npz', metavar='OUT.npz', type=str, help='Output file path')
+parser.add_argument('--in_text', metavar='PATH', type=str, help='Input file, directory, or glob pattern (utf-8 text).')
+parser.add_argument('--out_npz', metavar='OUT.npz', type=str, help='Output file path')
 
 def main():
     args = parser.parse_args()
