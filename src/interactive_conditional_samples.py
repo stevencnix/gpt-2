@@ -9,14 +9,14 @@ import tensorflow as tf
 import model, sample, encoder
 
 def interact_model(
-    model_name='124M',
-    seed=None,
-    nsamples=1,
+    model_name='1558M',
+    seed=42,
+    nsamples=5,
     batch_size=1,
-    length=None,
+    length=1000,
     temperature=1,
-    top_k=0,
-    top_p=1,
+    top_k=40,
+    top_p=.9,
     models_dir='models',
 ):
     """
